@@ -10,7 +10,7 @@
 
 British Airways (BA) is the flag carrier airline of the United Kingdom and one of the largest airlines in Europe. With thousands of flights operating daily, customer satisfaction plays a critical role in the airline's reputation and revenue.
 
-In this project, I analyzed **3,926 real customer reviews** collected from [Skytrax](https://www.airlinequality.com/airline-reviews/british-airways) — one of the most trusted airline review platforms in the world. The dataset contains detailed ratings across multiple service dimensions including seat comfort, food, cabin staff, entertainment, and overall value for money.
+In this project, I analyzed **3,926 real customer reviews** collected from [Skytrax](https://www.airlinequality.com/airline-reviews/british-airways). The dataset contains detailed ratings across multiple service dimensions including seat comfort, food, cabin staff, entertainment, and overall value for money.
 
 The project is divided into two parts:
 - **Part 1 — Exploratory Data Analysis (EDA):** Understanding the data through visualizations and statistics
