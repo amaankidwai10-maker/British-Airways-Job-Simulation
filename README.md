@@ -1,9 +1,8 @@
-# British-Airways-Job-Simulation
-# British Airways Customer Review Analysis
+# British Airways Customer Review Analysis 
 
 > **Analyzing 3,926 customer reviews to uncover what makes passengers recommend — or avoid — British Airways.**
 
-![Wordcloud](wordcloud.png)
+![Wordcloud](Charts/wordcloud.png)
 
 ---
 
@@ -57,28 +56,28 @@ Before analysis, the dataset required significant cleaning:
 ## 📊 Exploratory Data Analysis (EDA)
 
 ### 1. Ratings Distribution
-![Ratings Chart](ratings_chart.png)
+![Ratings Chart](Charts/ratings_chart.png)
 
 The overall ratings are heavily skewed toward the extremes — customers either love BA or hate it. The average rating is just **4.67 out of 10**, which is well below average for a major international carrier. This suggests a deeply divided customer base with very few neutral experiences.
 
 ---
 
 ### 2. Top 10 Countries Reviewing BA
-![Top Countries](top_countries.png)
+![Top Countries](Charts/top_countries.png)
 
 The **United Kingdom** dominates the reviews by a large margin, followed by the United States and Australia. This makes sense as BA primarily serves routes to and from London Heathrow. The high volume of UK reviews also suggests that domestic and frequent flyers are the most vocal about their experiences.
 
 ---
 
 ### 3. Type of Traveller Breakdown
-![Traveller Type](traveller_type.png)
+![Traveller Type](Charts/traveller_type.png)
 
 **Couple Leisure** travellers make up the largest group at **33.7%**, followed by Solo Leisure and Business travellers. Family leisure travellers are the smallest group. This breakdown is important because different traveller types have very different expectations and priorities.
 
 ---
 
 ### 4. Ratings by Type of Traveller
-![Ratings by Traveller](ratings_by_traveller.png)
+![Ratings by Traveller](Charts/ratings_by_traveller.png)
 
 This boxplot reveals a critical insight:
 - **Business travellers** are the **most dissatisfied** — with a median rating of just 3/10
@@ -90,21 +89,21 @@ This suggests BA is significantly underdelivering for its highest-paying custome
 ---
 
 ### 5. Ratings by Seat Type
-![Ratings by Seat](ratings_by_seat.png)
+![Ratings by Seat](Charts/ratings_by_seat.png)
 
 As expected, **First Class** passengers give the highest ratings, followed by Business, Premium Economy, and Economy. However, even First Class passengers only give a median rating of around 6–7/10, which indicates that BA is underperforming **across all cabin classes** — not just economy.
 
 ---
 
 ### 6. Word Cloud of Customer Reviews
-![Wordcloud](wordcloud.png)
+![Wordcloud](Charts/wordcloud.png)
 
 The word cloud generated from 3,926 full review texts reveals the most frequently mentioned topics. The dominant words are **seat, flight, BA, service, food, business class, cabin crew** and **Heathrow**. Words like **delayed, bag** and **hour** also appear prominently, pointing to operational issues around baggage and delays as recurring pain points.
 
 ---
 
 ### 7. Correlation Heatmap
-![Correlation Heatmap](correlation_heatmap.png)
+![Correlation Heatmap](Charts/correlation_heatmap.png)
 
 The heatmap shows how strongly each service dimension correlates with the overall rating:
 
@@ -145,12 +144,12 @@ Predict whether a customer will **recommend British Airways** (yes/no) based on 
 | Testing Split | 20% |
 
 ### Feature Importance
-![Feature Importance](feature_importance.png)
+![Feature Importance](Charts/feature_importance.png)
 
 The ML model confirms what the correlation heatmap suggested — **Value For Money is the single most important factor** in predicting whether a customer will recommend BA. This is a powerful and consistent finding across both the statistical analysis and the machine learning model.
 
 ### Confusion Matrix
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](Charts/confusion_matrix.png)
 
 | | Predicted: Not Recommended | Predicted: Recommended |
 |---|---|---|
@@ -190,15 +189,17 @@ Based on this analysis, here are data-driven recommendations:
 British-Airways-Job-Simulation/
 ├── British_Airways_EDA.ipynb
 ├── British_Airways_Data.csv
-├── ratings_chart.png
-├── top_countries.png
-├── traveller_type.png
-├── ratings_by_traveller.png
-├── ratings_by_seat.png
-├── wordcloud.png
-├── correlation_heatmap.png
-├── feature_importance.png
-└── confusion_matrix.png
+├── README.md
+└── Charts/
+    ├── ratings_chart.png
+    ├── top_countries.png
+    ├── traveller_type.png
+    ├── ratings_by_traveller.png
+    ├── ratings_by_seat.png
+    ├── wordcloud.png
+    ├── correlation_heatmap.png
+    ├── feature_importance.png
+    └── confusion_matrix.png
 ```
 
 ---
